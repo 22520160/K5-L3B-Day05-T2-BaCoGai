@@ -12,7 +12,7 @@
 | *Họ và Tên* | *Mã Học Viên* | *Việc đã làm* |
 | ----- | ----- | ----- |
 | Phạm Lê Chuẩn | 2A202603784 | |
-| Hồ An Lộc |  | |
+| Hồ An Lộc | 2A202603743 | |
 | Nguyễn Quang Huy | | |
 ## §1. Lát cắt & phạm vi
 - Lát cắt (chép từ track).
