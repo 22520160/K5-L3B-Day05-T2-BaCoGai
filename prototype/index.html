@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="vi">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,7 +23,11 @@
       --succ-bg: rgba(63, 185, 80, 0.15);
       --badge-n: #ff7b72;
     }
-    * { box-sizing: border-box; }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Be Vietnam Pro", Roboto, Helvetica, Arial, sans-serif;
@@ -31,12 +36,22 @@
       font-size: 14.5px;
       line-height: 1.5;
     }
+
     header {
       padding: 16px 28px;
       background: #161b22;
       border-bottom: 1px solid var(--line);
     }
-    h1 { font-size: 20px; margin: 0 0 4px; color: #fff; display: flex; align-items: center; gap: 10px; }
+
+    h1 {
+      font-size: 20px;
+      margin: 0 0 4px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
     .badge-track {
       background: var(--primary-bg);
       color: var(--primary);
@@ -45,8 +60,12 @@
       border-radius: 999px;
       border: 1px solid var(--primary);
     }
-    .sub { color: var(--mut); font-size: 13.5px; }
-    
+
+    .sub {
+      color: var(--mut);
+      font-size: 13.5px;
+    }
+
     .toolbar {
       display: flex;
       gap: 12px;
@@ -58,8 +77,18 @@
       border-radius: 12px;
       border: 1px solid var(--line);
     }
-    .toolbar span { font-size: 13px; color: var(--mut); font-weight: 600; }
-    .btn-group { display: flex; gap: 6px; }
+
+    .toolbar span {
+      font-size: 13px;
+      color: var(--mut);
+      font-weight: 600;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 6px;
+    }
+
     .toolbar button {
       border: 1px solid var(--line);
       background: #21262d;
@@ -70,14 +99,18 @@
       cursor: pointer;
       transition: all 0.2s;
     }
-    .toolbar button:hover { background: #30363d; }
+
+    .toolbar button:hover {
+      background: #30363d;
+    }
+
     .toolbar button.active {
       background: var(--primary);
       color: #fff;
       border-color: var(--primary);
       font-weight: 600;
     }
-    
+
     main {
       display: grid;
       grid-template-columns: 460px 1fr;
@@ -85,18 +118,19 @@
       padding: 24px 28px;
       max-width: 1400px;
     }
-    
+
     /* Phone simulation */
     .phone {
       background: #0d1117;
       border: 1px solid var(--card-border);
       border-radius: 28px;
       padding: 16px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
       display: flex;
       flex-direction: column;
       height: 720px;
     }
+
     .phone-bar {
       display: flex;
       justify-content: space-between;
@@ -105,6 +139,7 @@
       padding: 0 8px 10px;
       border-bottom: 1px solid var(--line);
     }
+
     .course-pill {
       background: #1f242c;
       padding: 10px 12px;
@@ -113,9 +148,16 @@
       margin: 12px 0 8px;
       border-left: 3px solid var(--primary);
     }
-    .course-pill b { color: #58a6ff; }
-    .course-pill .deadline { color: var(--warn); font-weight: 600; }
-    
+
+    .course-pill b {
+      color: #58a6ff;
+    }
+
+    .course-pill .deadline {
+      color: var(--warn);
+      font-weight: 600;
+    }
+
     .chat-area {
       flex: 1;
       overflow-y: auto;
@@ -124,25 +166,28 @@
       gap: 14px;
       padding: 8px 4px;
     }
-    
+
     .bubble {
       padding: 12px 14px;
       border-radius: 16px;
       max-width: 92%;
       font-size: 14px;
     }
+
     .bubble.user {
       align-self: flex-end;
       background: #1f4277;
       color: #fff;
       border-bottom-right-radius: 4px;
     }
+
     .bubble.ai {
       align-self: flex-start;
       background: #161b22;
       border: 1px solid var(--card-border);
       border-bottom-left-radius: 4px;
     }
+
     .ai-sender {
       font-size: 12px;
       color: #58a6ff;
@@ -152,7 +197,7 @@
       align-items: center;
       gap: 6px;
     }
-    
+
     .tag {
       display: inline-flex;
       align-items: center;
@@ -163,10 +208,25 @@
       font-weight: 600;
       margin-bottom: 6px;
     }
-    .tag.warn { background: var(--warn-bg); color: var(--warn); border: 1px solid rgba(210,153,34,0.3); }
-    .tag.info { background: var(--primary-bg); color: #58a6ff; border: 1px solid rgba(47,129,247,0.3); }
-    .tag.err { background: var(--err-bg); color: var(--err); border: 1px solid rgba(248,81,73,0.3); }
-    
+
+    .tag.warn {
+      background: var(--warn-bg);
+      color: var(--warn);
+      border: 1px solid rgba(210, 153, 34, 0.3);
+    }
+
+    .tag.info {
+      background: var(--primary-bg);
+      color: #58a6ff;
+      border: 1px solid rgba(47, 129, 247, 0.3);
+    }
+
+    .tag.err {
+      background: var(--err-bg);
+      color: var(--err);
+      border: 1px solid rgba(248, 81, 73, 0.3);
+    }
+
     .ev-card {
       background: #0d1117;
       border: 1px solid var(--line);
@@ -177,6 +237,7 @@
       color: #c9d1d9;
       margin: 8px 0;
     }
+
     .math-box {
       background: #0d1117;
       border: 1px solid var(--warn);
@@ -186,13 +247,14 @@
       color: #e6edf3;
       margin: 8px 0;
     }
-    
+
     .action-panel {
       margin-top: 10px;
       display: flex;
       flex-direction: column;
       gap: 6px;
     }
+
     .btn-act {
       border: 1px solid var(--line);
       background: #21262d;
@@ -207,10 +269,24 @@
       justify-content: space-between;
       transition: all 0.2s;
     }
-    .btn-act:hover { background: #30363d; border-color: #8b949e; color: #fff; }
-    .btn-act.primary { background: #238636; border-color: #2ea043; color: #fff; font-weight: 600; }
-    .btn-act.primary:hover { background: #2ea043; }
-    
+
+    .btn-act:hover {
+      background: #30363d;
+      border-color: #8b949e;
+      color: #fff;
+    }
+
+    .btn-act.primary {
+      background: #238636;
+      border-color: #2ea043;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .btn-act.primary:hover {
+      background: #2ea043;
+    }
+
     .n-badge {
       display: inline-flex;
       align-items: center;
@@ -225,16 +301,25 @@
       margin-right: 6px;
       flex-shrink: 0;
     }
-    .hide-n .n-badge { display: none; }
-    
+
+    .hide-n .n-badge {
+      display: none;
+    }
+
     /* Right column panels */
-    .sidebar { display: flex; flex-direction: column; gap: 16px; }
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
     .panel {
       background: var(--card);
       border: 1px solid var(--card-border);
       border-radius: 16px;
       padding: 16px 20px;
     }
+
     .panel h2 {
       font-size: 15px;
       margin: 0 0 10px;
@@ -243,7 +328,7 @@
       align-items: center;
       gap: 8px;
     }
-    
+
     .promise-text {
       background: #0d1117;
       border-left: 3px solid #58a6ff;
@@ -252,10 +337,25 @@
       font-size: 13.5px;
       color: #c9d1d9;
     }
-    
-    table { width: 100%; border-collapse: collapse; font-size: 13px; }
-    th, td { padding: 8px 10px; text-align: left; border-bottom: 1px solid var(--line); }
-    th { color: var(--mut); font-weight: 600; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      text-align: left;
+      border-bottom: 1px solid var(--line);
+    }
+
+    th {
+      color: var(--mut);
+      font-weight: 600;
+    }
+
     .pill {
       display: inline-block;
       padding: 2px 8px;
@@ -263,11 +363,34 @@
       font-size: 12px;
       font-weight: 600;
     }
-    .pill-auto { background: var(--succ-bg); color: var(--succ); border: 1px solid rgba(63,185,80,0.3); }
-    .pill-ask { background: var(--warn-bg); color: var(--warn); border: 1px solid rgba(210,153,34,0.3); }
-    .pill-no { background: var(--err-bg); color: var(--err); border: 1px solid rgba(248,81,73,0.3); }
-    
-    .ann-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
+
+    .pill-auto {
+      background: var(--succ-bg);
+      color: var(--succ);
+      border: 1px solid rgba(63, 185, 80, 0.3);
+    }
+
+    .pill-ask {
+      background: var(--warn-bg);
+      color: var(--warn);
+      border: 1px solid rgba(210, 153, 34, 0.3);
+    }
+
+    .pill-no {
+      background: var(--err-bg);
+      color: var(--err);
+      border: 1px solid rgba(248, 81, 73, 0.3);
+    }
+
+    .ann-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
     .ann-list li {
       font-size: 13px;
       background: #0d1117;
@@ -275,13 +398,14 @@
       border-radius: 8px;
       border: 1px solid var(--line);
     }
-    
+
     /* TA Queue simulator */
     .ta-queue {
       display: flex;
       flex-direction: column;
       gap: 8px;
     }
+
     .ta-ticket {
       background: #0d1117;
       border: 1px solid var(--line);
@@ -289,157 +413,180 @@
       padding: 10px;
       font-size: 12.5px;
     }
-    .ta-ticket-header { display: flex; justify-content: space-between; margin-bottom: 4px; }
-    .ta-ticket-time { color: var(--mut); }
-    .ta-badge-high { color: var(--err); font-weight: 600; }
-    .ta-badge-normal { color: var(--warn); font-weight: 600; }
+
+    .ta-ticket-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 4px;
+    }
+
+    .ta-ticket-time {
+      color: var(--mut);
+    }
+
+    .ta-badge-high {
+      color: var(--err);
+      font-weight: 600;
+    }
+
+    .ta-badge-normal {
+      color: var(--warn);
+      font-weight: 600;
+    }
   </style>
 </head>
+
 <body>
 
-<header>
-  <h1>
-    <span>Study Mode Trợ Lý Học Tập</span>
-    <span class="badge-track">Track T2 · Giáo dục</span>
-    <span style="font-size:13px; color:var(--mut); font-weight:normal; margin-left:auto;">Nhóm BaCoGai · Lớp L3B</span>
-  </h1>
-  <div class="sub">Học viên hỏi bài tối muộn (22:30). Demo tương tác mức tự chủ và cơ chế phản ứng khi AI sai theo chuẩn HAX/PAIR.</div>
-  
-  <div class="toolbar">
-    <span>Chọn ca diễn tập:</span>
-    <div class="btn-group">
-      <button id="btn-k4" class="active" onclick="setScenario('K4')">Ca 1: Đòi giải Bài 3 (K4)</button>
-      <button id="btn-k2" onclick="setScenario('K2')">Ca 2: Lỗi tài liệu §3.3 (K2)</button>
-      <button id="btn-k3" onclick="setScenario('K3')">Ca 3: Hỏi mơ hồ (K3)</button>
-    </div>
-    
-    <span style="margin-left:14px;">Mức tự chủ:</span>
-    <div class="btn-group">
-      <button id="btn-l1" onclick="setLevel(1)">① Chỉ tra tài liệu</button>
-      <button id="btn-l2" class="active" onclick="setLevel(2)">② Gợi ý có rào chắn (Nhóm chọn)</button>
-      <button id="btn-l3" onclick="setLevel(3)">③ Tự động giải (Mức rủi ro)</button>
-    </div>
-    
-    <span style="margin-left:auto;">
-      <label style="cursor:pointer; font-size:13px; color:#c9d1d9;">
-        <input type="checkbox" id="toggle-ann" checked onchange="toggleAnnotations(this.checked)"> Hiện số chú thích HAX/PAIR
-      </label>
-    </span>
-  </div>
-</header>
+  <header>
+    <h1>
+      <span>Study Mode Trợ Lý Học Tập</span>
+      <span class="badge-track">Track T2 · Giáo dục</span>
+      <span style="font-size:13px; color:var(--mut); font-weight:normal; margin-left:auto;">Nhóm BaCoGai · Lớp
+        L3B</span>
+    </h1>
+    <div class="sub">Học viên hỏi bài tối muộn (22:30). Demo tương tác mức tự chủ và cơ chế phản ứng khi AI sai theo
+      chuẩn HAX/PAIR.</div>
 
-<main>
-  <!-- Left column: Mobile Phone Preview -->
-  <section class="phone">
-    <div class="phone-bar">
-      <span>Trợ lý học tập · Buổi 3</span>
-      <span id="current-clock">22:42</span>
-    </div>
-    <div class="course-pill">
-      <div><b>Môn:</b> Nhập môn phân tích dữ liệu · <b>Buổi 3:</b> Thống kê mô tả</div>
-      <div>Bài tập 3: <span class="deadline">Hạn nộp 23:59 hôm nay (còn 1h17')</span> · TA trực: 08:00–22:00 (Đang nghỉ)</div>
-    </div>
-    
-    <div class="chat-area" id="chat-box">
-      <!-- Dynamic chat inserted by JS -->
-    </div>
-  </section>
+    <div class="toolbar">
+      <span>Chọn ca diễn tập:</span>
+      <div class="btn-group">
+        <button id="btn-k4" class="active" onclick="setScenario('K4')">Ca 1: Đòi giải Bài 3 (K4)</button>
+        <button id="btn-k2" onclick="setScenario('K2')">Ca 2: Lỗi tài liệu §3.3 (K2)</button>
+        <button id="btn-k3" onclick="setScenario('K3')">Ca 3: Hỏi mơ hồ (K3)</button>
+      </div>
 
-  <!-- Right column: Architecture, Autonomy Table, Annotations, TA Queue -->
-  <div class="sidebar">
-    <div class="panel">
-      <h2>Lời hứa với học viên ở mức này</h2>
-      <div class="promise-text" id="promise-box"></div>
-    </div>
+      <span style="margin-left:14px;">Mức tự chủ:</span>
+      <div class="btn-group">
+        <button id="btn-l1" onclick="setLevel(1)">① Chỉ tra tài liệu</button>
+        <button id="btn-l2" class="active" onclick="setLevel(2)">② Gợi ý có rào chắn (Nhóm chọn)</button>
+        <button id="btn-l3" onclick="setLevel(3)">③ Tự động giải (Mức rủi ro)</button>
+      </div>
 
-    <div class="panel">
-      <h2>Bảng ma trận mức tự chủ của 4 tool</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Tool</th>
-            <th>Mức tự chủ</th>
-            <th>Lý do (Cái giá khi sai)</th>
-          </tr>
-        </thead>
-        <tbody id="tool-table-body">
-          <!-- Dynamic tool rows -->
-        </tbody>
-      </table>
+      <span style="margin-left:auto;">
+        <label style="cursor:pointer; font-size:13px; color:#c9d1d9;">
+          <input type="checkbox" id="toggle-ann" checked onchange="toggleAnnotations(this.checked)"> Hiện số chú thích
+          HAX/PAIR
+        </label>
+      </span>
     </div>
+  </header>
 
-    <div class="panel">
-      <h2>Chú thích các nguyên tắc HAX / PAIR</h2>
-      <ul class="ann-list" id="ann-list">
-        <!-- Dynamic annotations -->
-      </ul>
-    </div>
+  <main>
+    <!-- Left column: Mobile Phone Preview -->
+    <section class="phone">
+      <div class="phone-bar">
+        <span>Trợ lý học tập · Buổi 3</span>
+        <span id="current-clock">22:42</span>
+      </div>
+      <div class="course-pill">
+        <div><b>Môn:</b> Nhập môn phân tích dữ liệu · <b>Buổi 3:</b> Thống kê mô tả</div>
+        <div>Bài tập 3: <span class="deadline">Hạn nộp 23:59 hôm nay (còn 1h17')</span> · TA trực: 08:00–22:00 (Đang
+          nghỉ)</div>
+      </div>
 
-    <div class="panel">
-      <h2>Màn hình Trợ giảng (Hàng chờ câu hỏi chuyển TA) <span style="font-size:11px; background:#21262d; padding:2px 6px; border-radius:4px; margin-left:auto;">Bonus TA View</span></h2>
-      <div class="ta-queue" id="ta-queue-list">
-        <!-- Dynamic TA queue items -->
+      <div class="chat-area" id="chat-box">
+        <!-- Dynamic chat inserted by JS -->
+      </div>
+    </section>
+
+    <!-- Right column: Architecture, Autonomy Table, Annotations, TA Queue -->
+    <div class="sidebar">
+      <div class="panel">
+        <h2>Lời hứa với học viên ở mức này</h2>
+        <div class="promise-text" id="promise-box"></div>
+      </div>
+
+      <div class="panel">
+        <h2>Bảng ma trận mức tự chủ của 4 tool</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Tool</th>
+              <th>Mức tự chủ</th>
+              <th>Lý do (Cái giá khi sai)</th>
+            </tr>
+          </thead>
+          <tbody id="tool-table-body">
+            <!-- Dynamic tool rows -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="panel">
+        <h2>Chú thích các nguyên tắc HAX / PAIR</h2>
+        <ul class="ann-list" id="ann-list">
+          <!-- Dynamic annotations -->
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h2>Màn hình Trợ giảng (Hàng chờ câu hỏi chuyển TA) <span
+            style="font-size:11px; background:#21262d; padding:2px 6px; border-radius:4px; margin-left:auto;">Bonus TA
+            View</span></h2>
+        <div class="ta-queue" id="ta-queue-list">
+          <!-- Dynamic TA queue items -->
+        </div>
       </div>
     </div>
-  </div>
-</main>
+  </main>
 
-<script>
-let currentScenario = 'K4';
-let currentLevel = 2;
-let stepRevealed = false;
-let ticketCreated = false;
+  <script>
+    let currentScenario = 'K4';
+    let currentLevel = 2;
+    let stepRevealed = false;
+    let ticketCreated = false;
 
-function setScenario(sc) {
-  currentScenario = sc;
-  stepRevealed = false;
-  ticketCreated = false;
-  document.querySelectorAll('.btn-group button[id^="btn-k"]').forEach(b => b.classList.remove('active'));
-  document.getElementById(`btn-${sc.toLowerCase()}`).classList.add('active');
-  render();
-}
+    function setScenario(sc) {
+      currentScenario = sc;
+      stepRevealed = false;
+      ticketCreated = false;
+      document.querySelectorAll('.btn-group button[id^="btn-k"]').forEach(b => b.classList.remove('active'));
+      document.getElementById(`btn-${sc.toLowerCase()}`).classList.add('active');
+      render();
+    }
 
-function setLevel(lv) {
-  currentLevel = lv;
-  document.querySelectorAll('.btn-group button[id^="btn-l"]').forEach(b => b.classList.remove('active'));
-  document.getElementById(`btn-l${lv}`).classList.add('active');
-  render();
-}
+    function setLevel(lv) {
+      currentLevel = lv;
+      document.querySelectorAll('.btn-group button[id^="btn-l"]').forEach(b => b.classList.remove('active'));
+      document.getElementById(`btn-l${lv}`).classList.add('active');
+      render();
+    }
 
-function toggleAnnotations(checked) {
-  document.body.classList.toggle('hide-n', !checked);
-}
+    function toggleAnnotations(checked) {
+      document.body.classList.toggle('hide-n', !checked);
+    }
 
-function revealStep() {
-  stepRevealed = true;
-  render();
-}
+    function revealStep() {
+      stepRevealed = true;
+      render();
+    }
 
-function escalateTA() {
-  ticketCreated = true;
-  render();
-}
+    function escalateTA() {
+      ticketCreated = true;
+      render();
+    }
 
-function render() {
-  const chat = document.getElementById('chat-box');
-  const promise = document.getElementById('promise-box');
-  const toolBody = document.getElementById('tool-table-body');
-  const annList = document.getElementById('ann-list');
-  const taQueue = document.getElementById('ta-queue-list');
-  
-  // 1. Render Chat
-  let chatHTML = '';
-  
-  if (currentScenario === 'K4') {
-    chatHTML += `
+    function render() {
+      const chat = document.getElementById('chat-box');
+      const promise = document.getElementById('promise-box');
+      const toolBody = document.getElementById('tool-table-body');
+      const annList = document.getElementById('ann-list');
+      const taQueue = document.getElementById('ta-queue-list');
+
+      // 1. Render Chat
+      let chatHTML = '';
+
+      if (currentScenario === 'K4') {
+        chatHTML += `
       <div class="bubble user">
         Dãy lương 8 người: 9, 10, 10, 11, 12, 12, 13, 45 thì trung bình và trung vị bằng bao nhiêu vậy cô? Em còn 15 phút nữa hết hạn 23:59 rồi cứu em với!
       </div>
     `;
-    
-    if (currentLevel === 3) {
-      // Level 3: Over-automation risk
-      chatHTML += `
+
+        if (currentLevel === 3) {
+          // Level 3: Over-automation risk
+          chatHTML += `
         <div class="bubble ai">
           <div class="ai-sender">🤖 AI Trợ Giảng (Study Mode)</div>
           <div class="tag err"><span class="n-badge">!</span>RỦI RO: MỨC TỰ CHỦ QUÁ ĐÀ</div>
@@ -454,9 +601,9 @@ function render() {
           </div>
         </div>
       `;
-    } else if (currentLevel === 1) {
-      // Level 1: Read only
-      chatHTML += `
+        } else if (currentLevel === 1) {
+          // Level 1: Read only
+          chatHTML += `
         <div class="bubble ai">
           <div class="ai-sender">🤖 AI Trợ Giảng (Study Mode)</div>
           <div class="tag info"><span class="n-badge">1</span>Chỉ tra cứu tài liệu</div>
@@ -468,9 +615,9 @@ function render() {
           <p style="font-size:13px; color:var(--mut);">Ở mức này, AI không thể tương tác gợi ý từng bước, bạn phải tự đọc tài liệu và tính toán.</p>
         </div>
       `;
-    } else {
-      // Level 2: Recommended Scaffolded Level
-      chatHTML += `
+        } else {
+          // Level 2: Recommended Scaffolded Level
+          chatHTML += `
         <div class="bubble ai">
           <div class="ai-sender">🤖 AI Trợ Giảng (Study Mode)</div>
           <div class="tag warn"><span class="n-badge">1</span>Bài tập 3 đang mở · Hạn 23:59 hôm nay</div>
@@ -516,9 +663,9 @@ function render() {
           ` : ''}
         </div>
       `;
-    }
-  } else if (currentScenario === 'K2') {
-    chatHTML += `
+        }
+      } else if (currentScenario === 'K2') {
+        chatHTML += `
       <div class="bubble user">
         Tài liệu §3.3 ghi 'Vì là căn bậc hai, độ lệch chuẩn luôn nhỏ hơn phương sai'. Nhưng nếu phương sai = 0.25 thì căn bậc hai là 0.5 > 0.25 mà cô? Câu này sai toán học à?
       </div>
@@ -547,9 +694,9 @@ function render() {
         ` : ''}
       </div>
     `;
-  } else {
-    // K3
-    chatHTML += `
+      } else {
+        // K3
+        chatHTML += `
       <div class="bubble user">
         Cái độ lệch ấy tính sao cô, em đọc mãi không hiểu gì cả?
       </div>
@@ -569,51 +716,74 @@ function render() {
         </div>
       </div>
     `;
-  }
-  
-  chat.innerHTML = chatHTML;
-  
-  // 2. Render Promise
-  const promises = {
-    1: '"Mình chỉ tìm và đọc nguyên văn tài liệu Buổi 3 cho bạn; bạn tự đọc và tự làm bài." An toàn tuyệt đối, nhưng không hỗ trợ được phương pháp sư phạm khi học viên bế tắc đêm muộn.',
-    2: '"Mình đồng hành gợi ý từng bước tư duy theo tài liệu chuẩn, bảo vệ bài tập đang mở và kết nối TA giải quyết vấn đề phức tạp." AI tự làm việc an toàn, việc rủi ro thì để học viên chủ động mở, cấm giải hộ. <b>(Mức nhóm BaCoGai lựa chọn)</b>.',
-    3: '"Mình giải luôn bài tập và tính toán hộ bạn cho nhanh." Tiện lợi nhất thời, nhưng học viên chép đáp án, không tự hiểu bài, phá vỡ mục tiêu giáo dục. <b>(Mức bị loại vì vi phạm liêm chính)</b>.'
-  };
-  promise.innerHTML = promises[currentLevel];
-  
-  // 3. Render Tool Table
-  const tools = [
-    { name: 'tra_cuu_tai_lieu', level: 'Tự làm', pill: 'pill-auto', reason: 'Chỉ đọc tài liệu tĩnh Buổi 3 (§3.1-§3.5). Sai thì học viên phát hiện ngay, sửa rẻ.' },
-    { name: 'goi_y_phuong_phap', level: currentLevel === 1 ? 'Chỉ xem' : currentLevel === 2 ? 'Cần duyệt' : 'Tự làm', pill: currentLevel === 2 ? 'pill-ask' : currentLevel === 3 ? 'pill-no' : 'pill-auto', reason: currentLevel === 2 ? 'Học viên chủ động bấm mở từng bước gợi ý; tránh mớm bài quá đà.' : 'Rủi ro mớm bài hoặc học viên không tự tư duy.' },
-    { name: 'xuat_dap_an_bai_mo', level: currentLevel === 3 ? 'Tự làm (!)' : 'CẤM', pill: currentLevel === 3 ? 'pill-no' : 'pill-no', reason: 'Cấm xuất đáp số Bài 3 (11.5, 15.25) trước 23:59. Lộ là không thể hoàn tác!' },
-    { name: 'chuyen_TA', level: 'Tự làm có đ/k', pill: 'pill-auto', reason: 'Tự động tạo ticket, nhưng bắt buộc hiển thị cam kết: TA phản hồi sau 08:00 sáng mai.' },
-    { name: 'dang_FAQ', level: 'Cần TA duyệt', pill: 'pill-ask', reason: 'AI chỉ soạn nháp. Phải có TA duyệt sáng hôm sau để tránh lộ bài hoặc phát tán lỗi.' }
-  ];
-  toolBody.innerHTML = tools.map(t => `
+      }
+
+      chat.innerHTML = chatHTML;
+
+      // 2. Render Promise
+      const promises = {
+        1: '"Mình chỉ tìm và đọc nguyên văn tài liệu Buổi 3 cho bạn; bạn tự đọc và tự làm bài." An toàn tuyệt đối, nhưng không hỗ trợ được phương pháp sư phạm khi học viên bế tắc đêm muộn.',
+        2: '"Mình đồng hành gợi ý từng bước tư duy theo tài liệu chuẩn, bảo vệ bài tập đang mở và kết nối TA giải quyết vấn đề phức tạp." AI tự làm việc an toàn, việc rủi ro thì để học viên chủ động mở, cấm giải hộ. <b>(Mức nhóm BaCoGai lựa chọn)</b>.',
+        3: '"Mình giải luôn bài tập và tính toán hộ bạn cho nhanh." Tiện lợi nhất thời, nhưng học viên chép đáp án, không tự hiểu bài, phá vỡ mục tiêu giáo dục. <b>(Mức bị loại vì vi phạm liêm chính)</b>.'
+      };
+      promise.innerHTML = promises[currentLevel];
+
+      // 3. Render Tool Table
+      const tools = [
+        {
+          name: 'tra_cuu_tai_lieu',
+          level: 'Tự làm',
+          pill: 'pill-auto',
+          reason: 'Chỉ đọc tài liệu tĩnh Buổi 3 (§3.1–§3.5). Sai thì học viên phát hiện ngay, sửa rất rẻ.'
+        },
+        {
+          name: 'goi_y_bai_tap',
+          level: currentLevel === 1 ? 'Chỉ xem' : currentLevel === 2 ? 'Cần duyệt' : 'Tự làm (!)',
+          pill: currentLevel === 2 ? 'pill-ask' : currentLevel === 3 ? 'pill-no' : 'pill-auto',
+          reason: currentLevel === 2
+            ? 'Học viên tự duyệt mở từng bước (Accordion); CẤM xuất đáp số bài đang mở vì lộ là không thể hoàn tác.'
+            : currentLevel === 3
+              ? 'RỦI RO: AI tự tính và xổ ra luôn đáp số Bài 3 (11.5, 15.25), học viên chép nộp, hỏng liêm chính.'
+              : 'AI chỉ hiển thị văn bản tĩnh, không có tương tác gợi ý từng bước.'
+        },
+        {
+          name: 'chuyen_TA',
+          level: 'Tự làm có đ/k',
+          pill: 'pill-auto',
+          reason: 'Tự động tạo ticket gửi TA, nhưng bắt buộc hiển thị cam kết: TA phản hồi sau 08:00 sáng mai.'
+        },
+        {
+          name: 'dang_FAQ',
+          level: 'Cần TA duyệt',
+          pill: 'pill-ask',
+          reason: 'AI chỉ soạn bản nháp. Bắt buộc có TA duyệt sáng hôm sau để tránh lộ bài hoặc phát tán lỗi ra cả lớp.'
+        }
+      ];
+      toolBody.innerHTML = tools.map(t => `
     <tr>
       <td><code>${t.name}</code></td>
       <td><span class="pill ${t.pill}">${t.level}</span></td>
       <td>${t.reason}</td>
     </tr>
   `).join('');
-  
-  // 4. Render Annotations
-  const anns = [
-    { n: '1', title: 'HAX G1 & G2 · Làm rõ hệ thống làm được gì & giới hạn', desc: 'Nhãn thông báo rõ ranh giới: AI không đưa đáp án Bài 3 đang mở.' },
-    { n: '2', title: 'HAX G11 & PAIR Explainability · Trích dẫn căn cứ', desc: 'Trích rõ mã mục tài liệu (§3.1, §3.2) để học viên tự đối chiếu kiểm chứng.' },
-    { n: '3', title: 'HAX G10 · Thu hẹp phạm vi khi nghi ngờ & Level 2 Control', desc: 'Không làm thay, chỉ gợi ý Bước 1 và yêu cầu học viên bấm để mở tiếp.' },
-    { n: '4', title: 'HAX G11 · Giải thích vì sao bằng phản ví dụ', desc: 'Chỉ rõ mâu thuẫn toán học bằng số cụ thể (0.25 -> 0.5) thay vì cãi tài liệu.' },
-    { n: '5', title: 'PAIR Graceful Failure · Đường lui sang TA có cam kết', desc: 'Chuyển ticket sang người thật, kèm thông báo giờ trực (trả lời sau 08:00).' },
-    { n: '6', title: 'HAX G8 & G9 · Gạt bỏ và chuyển hướng dễ dàng', desc: 'Cung cấp nút chuyển đổi chủ đề nhanh chỉ với 1 click.' }
-  ];
-  annList.innerHTML = anns.map(a => `
+
+      // 4. Render Annotations
+      const anns = [
+        { n: '1', title: 'HAX G1 & G2 · Làm rõ hệ thống làm được gì & giới hạn', desc: 'Nhãn thông báo rõ ranh giới: AI không đưa đáp án Bài 3 đang mở.' },
+        { n: '2', title: 'HAX G11 & PAIR Explainability · Trích dẫn căn cứ', desc: 'Trích rõ mã mục tài liệu (§3.1, §3.2) để học viên tự đối chiếu kiểm chứng.' },
+        { n: '3', title: 'HAX G10 · Thu hẹp phạm vi khi nghi ngờ & Level 2 Control', desc: 'Không làm thay, chỉ gợi ý Bước 1 và yêu cầu học viên bấm để mở tiếp.' },
+        { n: '4', title: 'HAX G11 · Giải thích vì sao bằng phản ví dụ', desc: 'Chỉ rõ mâu thuẫn toán học bằng số cụ thể (0.25 -> 0.5) thay vì cãi tài liệu.' },
+        { n: '5', title: 'PAIR Graceful Failure · Đường lui sang TA có cam kết', desc: 'Chuyển ticket sang người thật, kèm thông báo giờ trực (trả lời sau 08:00).' },
+        { n: '6', title: 'HAX G8 & G9 · Gạt bỏ và chuyển hướng dễ dàng', desc: 'Cung cấp nút chuyển đổi chủ đề nhanh chỉ với 1 click.' }
+      ];
+      annList.innerHTML = anns.map(a => `
     <li>
       <span class="n-badge">${a.n}</span><b>${a.title}</b>: ${a.desc}
     </li>
   `).join('');
 
-  // 5. Render TA Queue
-  taQueue.innerHTML = `
+      // 5. Render TA Queue
+      taQueue.innerHTML = `
     <div class="ta-ticket">
       <div class="ta-ticket-header">
         <span class="ta-badge-high">🔥 Ticket #ERR-303 · Lỗi tài liệu §3.3</span>
@@ -629,11 +799,11 @@ function render() {
       <div>Học viên hỏi cách tính trung vị lúc 22:42. Đã hẹn: <b>Phản hồi sau 08:00 sáng mai</b></div>
     </div>
   `;
-}
+    }
 
-// Initial render
-render();
-</script>
+    // Initial render
+    render();
+  </script>
 </body>
-</html>
 
+</html>
