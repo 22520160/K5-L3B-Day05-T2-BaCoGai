@@ -7,9 +7,21 @@
 ```markdown
 # Bài nộp LAB5 — [Track] · Nhóm [tên]
 [Danh sách thành viên và việc mỗi người làm — copy bảng từ README]
+*Lớp:* ____ · *Bàn / zone:* ____ · *Track:* ____
 
+| *Họ và Tên* | *Mã Học Viên* | *Việc đã làm* |
+| ----- | ----- | ----- |
+| Phạm Lê Chuẩn | 2A202603784 | |
+| Hồ An Lộc |  | |
+| Nguyễn Quang Huy | | |
 ## §1. Lát cắt & phạm vi
 - Lát cắt (chép từ track).
+Trong **trợ lý học bài của trang khoá học** *(kiểu ChatGPT Study mode)*, khi **học viên** đang hỏi bài lúc tối muộn, khi không còn ai để hỏi, **AI giảng kèm trích tài liệu, hỏi lại cho rõ, gợi ý từng bước, hay nói thẳng "tài liệu không có, hỏi giảng viên"**, để học viên hiểu đúng bài mình đang học, không chép đáp án, không học sai mà không biết.
+
+| Sản phẩm | Một người dùng | Một việc | Một quyết định của AI | Một kết quả |
+| :--- | :--- | :--- | :--- | :--- |
+| Trợ lý học bài của trang khoá học | Học viên | Hỏi bài lúc tối muộn, khi không còn ai để hỏi | Giảng kèm trích tài liệu, hỏi lại cho rõ, gợi ý từng bước, hay nói thẳng *"tài liệu không có, hỏi giảng viên"* | Học viên hiểu đúng bài mình đang học, không chép đáp án, không học sai mà không biết |
+
 - 3 việc tính năng KHÔNG làm, mỗi việc một câu vì sao.
 
 ## §2. Kịch bản rủi ro  (chặng 2)
