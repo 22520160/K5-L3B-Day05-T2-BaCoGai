@@ -1,4 +1,4 @@
-```markdown
+
 # Bài nộp LAB5 — t2-education · Nhóm BaCoGai
 *Lớp:* L3B · *Bàn / zone:* ____ · *Track:* t2
 
