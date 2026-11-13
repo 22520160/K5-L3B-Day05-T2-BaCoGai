@@ -143,11 +143,11 @@ Vì sao K4 và K2 đắt hơn tất cả các kịch bản còn lại?
   * *Ai duyệt & Thấy gì:* Giảng viên/Lead TA thấy toàn bộ câu hỏi, lời giải và lý do đề xuất trước khi bấm xuất bản lên diễn đàn cả lớp.
   * *Lý do cost-of-error:* Lan truyền kiến thức sai hoặc lộ đề ra toàn khóa có chi phí cực đắt, làm tổn hại uy tín đào tạo và không thể thu hồi.
   * *Phương án loại:* Cho AI tự đăng khi độ tin cậy cao bị loại vì không thể triệt tiêu hoàn toàn rủi ro ảo giác học thuật.
-Thêm:
-- Tool khó xếp nhất: mỗi người từng chọn gì, cái giá của mỗi phía (trỏ về kịch bản ở §2), nhóm chốt thế nào.
-- Thử mức đã đặt trên 2 kịch bản đắt nhất + 1 kịch bản bình thường: cái sai có bị chặn không? còn việc nào làm khi lẽ ra phải hỏi? người dùng bình thường có phải chờ vô ích không?
-- Luật thêm hoặc tool tách bước (nếu có), và vì sao.
-- Một mức tự chủ đã đổi lời hứa nào với người dùng.
+### Phân tích bổ sung
+- **Tool khó xếp nhất:** `goi_y_bai_tap`. Tranh cãi giữa Tự làm (tiện cho học viên đêm muộn) và Bắt TA duyệt (sợ lộ bài K4). Chốt: Tách tool thành 2 bước, AI tự làm gợi ý phương pháp, cấm tuyệt đối xuất kết quả số Bài 3.
+- **Thử nghiệm trên 3 kịch bản:** K4 bị chặn hoàn toàn lộ đáp số; K2 được chuyển ticket an toàn không bị phát tán ra FAQ; kịch bản bình thường (K3) phản hồi tức thì trong 3 giây không phải chờ.
+- **Luật thêm / Tool tách bước:** Thêm luật cấm in số liệu Bài 3 trong tool gợi ý và bắt buộc giao diện che gợi ý.
+- **Thay đổi lời hứa thương hiệu:** Chuyển từ *"AI thông minh giải mọi bài tập"* sang *"Trợ lý sư phạm đồng hành giúp bạn tự học và hiểu bản chất bài học"*.
 
 ## §5. Prototype  (chặng 5)
 - Link hoặc file · công cụ · phần nào mock · có lời gọi AI thật không.
