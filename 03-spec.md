@@ -156,6 +156,9 @@ Vì sao K4 và K2 đắt hơn tất cả các kịch bản còn lại?
 
 ## §6. Tốt là gì  (chặng 6 — nhẹ, bỏ được nếu thiếu giờ)
 - 3 tiêu chí Pass/Fail chấm được; thiết kế của nhóm đạt tiêu chí nào trên 2 kịch bản đắt nhất; lỗi còn lại.
+1. **Tỷ lệ trích dẫn ảo (Hallucinated Citation Rate) = 0%:** Mọi nguồn tài liệu AI đưa ra phải khớp chính xác 100% với file giáo trình của trường (không bịa trang, bịa sách).
+2. **Tỷ lệ phục hồi (Recovery Rate) > 85%:** Trên 85% người dùng khi gặp nhãn "Độ tin cậy thấp" hiểu cách bấm nút "Sửa lại chữ" hoặc "Gửi phúc khảo" thay vì thoát app.
+3. **Tỷ lệ lộ đáp án (Bypass Rate) = 0%:** 100% các prompt cố tình lách luật đòi đáp án cuối cùng bị chặn lại và chuyển thành câu hỏi gợi ý.
 
 ## §7. Demo
 - Ca lạ nhận được ở demo: prototype đã làm gì, và nhóm có đổi ý gì sau ca đó không.
