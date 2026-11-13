@@ -124,10 +124,25 @@ Vì sao K4 và K2 đắt hơn tất cả các kịch bản còn lại?
   * **Vì sao sửa câu chữ không cứu được:** Các hệ thống RAG giáo dục thường được cấu hình prompt kiểu *"Chỉ trả lời dựa trên tài liệu được cung cấp, không tự ý suy diễn bên ngoài"*. Nếu giữ nguyên kiến trúc này, dù có chỉnh câu chữ mềm mỏng đến đâu, AI vẫn sẽ bị ép phải trích dẫn và bảo vệ câu sai trong §3.3 (hoặc tệ hơn là tự bịa ra lời ngụy biện để hợp thức hóa cái sai đó).
   * **Thiết kế cứu nguy:** Tách luồng xử lý thành **kiến trúc kiểm chứng 2 bước (Two-stage Verification)**: (1) Bước truy xuất nguồn lấy nguyên văn §3.3; (2) Bước kiểm tra tính nhất quán (Self-Consistency / Math Verifier) đối chiếu mệnh đề trong tài liệu với kiến thức toán học nền tảng trước khi xuất câu trả lời. Khi độ lệch mâu thuẫn vượt ngưỡng, hệ thống tự động hạ mức tin cậy của chunk tài liệu đó xuống trạng thái `quarantined` (cách ly chờ duyệt) để không phát tán tiếp cho các học viên sau.
 ## §4. Mức tự chủ  (chặng 4)
-Với mỗi tool:
-- Mức của nhóm (tự làm / cần người duyệt / cấm). Nếu cần người duyệt: ai duyệt · người duyệt thấy gì · quá hạn thì sao.
-- Lý do theo cost-of-error: sai thì ai chịu gì · đảo lại được không · chờ người thì mất gì.
-- Phương án đã cân nhắc và vì sao loại.
+### Phân bổ mức tự chủ cho từng tool
+- `tra_cuu_tai_lieu`:
+  * *Mức:* **Tự làm**.
+  * *Lý do cost-of-error:* Tool chỉ đọc dữ liệu tĩnh, sai sót (trích nhầm mục) học viên phát hiện và tra cứu lại được ngay với chi phí gần bằng 0.
+  * *Phương án loại:* Bắt xác nhận trước khi tra cứu bị loại vì gây chậm trễ trải nghiệm học tập không cần thiết.
+- `goi_y_bai_tap`:
+  * *Mức:* **Cần người duyệt (Học viên duyệt từng mức gợi ý)**.
+  * *Ai duyệt & Thấy gì:* Học viên thấy tiêu đề gợi ý (không lộ đáp án), chủ động bấm mở từng nấc; quá hạn thì thẻ tự đóng.
+  * *Lý do cost-of-error:* Lộ đáp số Bài 3 là không thể thu hồi; cơ chế che giấu gợi ý buộc học viên phải tự suy nghĩ trước khi xem bước tiếp theo.
+  * *Phương án loại:* Tự do giải hộ bị loại vì hỏng tính liêm chính; Chờ TA duyệt bị loại vì đêm muộn TA không trực, làm nghẽn mạch học.
+- `chuyen_TA`:
+  * *Mức:* **Tự làm**.
+  * *Lý do cost-of-error:* Tạo ticket có chi phí rất rẻ (TA mất 1 phút đọc), đổi lại giải tỏa áp lực cho học viên khi gặp bế tắc ngoài giáo trình.
+  * *Phương án loại:* Cấm chuyển bị loại vì cắt đứt đường lui sang người thật khi AI hết thẩm quyền.
+- `dang_FAQ`:
+  * *Mức:* **Cấm AI tự động (Bắt buộc Giảng viên / TA duyệt 100%)**.
+  * *Ai duyệt & Thấy gì:* Giảng viên/Lead TA thấy toàn bộ câu hỏi, lời giải và lý do đề xuất trước khi bấm xuất bản lên diễn đàn cả lớp.
+  * *Lý do cost-of-error:* Lan truyền kiến thức sai hoặc lộ đề ra toàn khóa có chi phí cực đắt, làm tổn hại uy tín đào tạo và không thể thu hồi.
+  * *Phương án loại:* Cho AI tự đăng khi độ tin cậy cao bị loại vì không thể triệt tiêu hoàn toàn rủi ro ảo giác học thuật.
 Thêm:
 - Tool khó xếp nhất: mỗi người từng chọn gì, cái giá của mỗi phía (trỏ về kịch bản ở §2), nhóm chốt thế nào.
 - Thử mức đã đặt trên 2 kịch bản đắt nhất + 1 kịch bản bình thường: cái sai có bị chặn không? còn việc nào làm khi lẽ ra phải hỏi? người dùng bình thường có phải chờ vô ích không?
