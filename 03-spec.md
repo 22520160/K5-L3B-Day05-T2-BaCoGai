@@ -13,7 +13,7 @@
 | ----- | ----- | ----- |
 | Phạm Lê Chuẩn | 2A202603784 | |
 | Hồ An Lộc | 2A202603743 | |
-| Nguyễn Quang Huy | | |
+| Nguyễn Quang Huy | 2A202603768 | |
 
 ## §1. Lát cắt & phạm vi
 - Lát cắt (chép từ track).
