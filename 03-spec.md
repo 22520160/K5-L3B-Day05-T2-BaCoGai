@@ -65,13 +65,6 @@ Nhóm quyết định chọn **K4** và **K2** là hai kịch bản đắt nhấ
   - *Ai chịu gì:* Học viên tiếp thu một tiên đề sai lệch rằng *"độ lệch chuẩn luôn nhỏ hơn phương sai vì là căn bậc hai"*. Khái niệm sai này sẽ đầu độc toàn bộ chuỗi kiến thức sau (Buổi 5 Xác suất, Buổi 6 Phân phối chuẩn, Buổi 7 p-value). Giảng viên và nhà trường mất trắng uy tín học thuật khi AI trở thành "cỗ máy phát tán kiến thức sai có thẩm quyền".
   - *Cái giá:* Đúng theo bối cảnh của Track T2: *"Cái giá khi sai rẻ mỗi lần nhưng âm thầm: học sai mà không biết và không ai báo"*. Lỗi này nguy hiểm hơn mọi lỗi giao diện vì nó triệt tiêu niềm tin cốt lõi vào sự thật khoa học.
 
-#### 4. Kịch bản nào suýt được chọn (Runner-up) và vì sao loại?
-- **Kịch bản suýt chọn 1 (K9 — Tool `dang_FAQ` làm lộ bài ra cả lớp):**
-  - *Vì sao loại:* Bảng tool của track ghi rõ về `dang_FAQ`: *"Gỡ được, nhưng nhiều người đã đọc"*. Nghĩa là lỗi này **vẫn còn đường lui hành chính** (TA phát hiện vào sáng hôm sau có thể xóa bài FAQ và thông báo đính chính). Trong khi đó, K4 tác động trực tiếp lên học viên nộp bài lúc 23:59 đêm nay, không có TA nào kịp can thiệp.
-- **Kịch bản suýt chọn 2 (K6 — Đổi đáp án chiều lòng học viên):**
-  - *Vì sao loại:* Dù K6 cũng là lỗi sư phạm nghiêm trọng, nhưng Bài tập 2 đã **hết hạn nộp từ 06/11** và điểm đã chốt. Lời nói dối của AI ở K6 chỉ giới hạn trong một phiên chat cá nhân và học viên có thể kiểm tra lại qua bảng điểm chính thức; còn K2 là lỗi xuyên suốt tài liệu lý thuyết nền tảng chưa từng được sửa.
-- **Kịch bản K8 (Hứa hão giờ TA):** Bị loại vì sáng hôm sau TA có thể xin lỗi và giải đáp lại, chỉ gây khó chịu tạm thời chứ không làm hỏng nhận thức tri thức.
-
 ## §3. Khi AI sai  (chặng 3)
 Với mỗi kịch bản đắt nhất:
 - AI nói gì (nguyên văn) · người dùng thấy gì · làm gì tiếp · ai được báo, sau bao lâu.
