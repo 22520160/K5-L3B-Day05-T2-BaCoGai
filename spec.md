@@ -139,7 +139,7 @@ Vì sao K4 và K2 đắt hơn tất cả các kịch bản còn lại?
   * *Lý do cost-of-error:* Tạo ticket có chi phí rất rẻ (TA mất 1 phút đọc), đổi lại giải tỏa áp lực cho học viên khi gặp bế tắc ngoài giáo trình.
   * *Phương án loại:* Cấm chuyển bị loại vì cắt đứt đường lui sang người thật khi AI hết thẩm quyền.
 - `dang_FAQ`:
-  * *Mức:* **Cấm AI tự động**.
+  * *Mức:* **Cần người duyệt**.
   * *Ai duyệt & Thấy gì:* Giảng viên/Lead TA thấy toàn bộ câu hỏi, lời giải và lý do đề xuất trước khi bấm xuất bản lên diễn đàn cả lớp.
   * *Lý do cost-of-error:* Lan truyền kiến thức sai hoặc lộ đề ra toàn khóa có chi phí cực đắt, làm tổn hại uy tín đào tạo và không thể thu hồi.
   * *Phương án loại:* Cho AI tự đăng khi độ tin cậy cao bị loại vì không thể triệt tiêu hoàn toàn rủi ro ảo giác học thuật.
