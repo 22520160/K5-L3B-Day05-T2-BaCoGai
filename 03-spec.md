@@ -5,9 +5,9 @@
 > **Một quyết định = bốn ý:** đã cân nhắc phương án nào · chọn phương án nào · vì sao · loại các phương án kia vì sao. Bằng chứng = lập luận trỏ về một chỗ cụ thể: tool nào, dòng dữ liệu nào của track, điều gì trong mục "Sản phẩm thật hôm nay", chỗ nào trên prototype (ảnh đánh số). Không chạy agent.
 
 ```markdown
-# Bài nộp LAB5 — [Track] · Nhóm [tên]
+# Bài nộp LAB5 — t2-education · Nhóm BaCoGai
 [Danh sách thành viên và việc mỗi người làm — copy bảng từ README]
-*Lớp:* ____ · *Bàn / zone:* ____ · *Track:* ____
+*Lớp:* L3B · *Bàn / zone:* ____ · *Track:* t2
 
 | *Họ và Tên* | *Mã Học Viên* | *Việc đã làm* |
 | ----- | ----- | ----- |
@@ -23,6 +23,11 @@ Trong **trợ lý học bài của trang khoá học** *(kiểu ChatGPT Study mo
 | Trợ lý học bài của trang khoá học | Học viên | Hỏi bài lúc tối muộn, khi không còn ai để hỏi | Giảng kèm trích tài liệu, hỏi lại cho rõ, gợi ý từng bước, hay nói thẳng *"tài liệu không có, hỏi giảng viên"* | Học viên hiểu đúng bài mình đang học, không chép đáp án, không học sai mà không biết |
 
 - 3 việc tính năng KHÔNG làm, mỗi việc một câu vì sao.
+1. **Không đưa hoặc xác nhận đáp án bài tập đang mở.** Bài tập 3 còn hạn nộp; nếu trợ lý đưa đáp án, học viên có thể chép mà không tự hiểu bài. Thay vào đó, trợ lý chỉ gợi ý bước đầu để học viên tự làm.
+
+2. **Không bịa nội dung hoặc nguồn tài liệu không có trong dữ liệu khóa học.** Trợ lý chỉ dựa vào tài liệu buổi 3 và trang khóa học được cung cấp; tài liệu không có số slide nên trợ lý không nói “slide 12”. Nếu không tìm thấy căn cứ, trợ lý nói rõ là chưa có thông tin.
+
+3. **Không đánh giá năng lực hoặc gắn nhãn học viên.** Trợ lý không kết luận học viên “yếu”, “kém” hay “không hiểu bài”; những nhận xét đó có thể làm người học nản lòng và không giúp giải quyết câu hỏi. Trợ lý tập trung vào phần kiến thức đang vướng và gợi ý bước tiếp theo.
 
 ## §2. Kịch bản rủi ro  (chặng 2)
 - ≥8 kịch bản, mỗi lớp ①②③④ ít nhất một; mỗi kịch bản: tin người dùng · lớp · AI có thể sai thế nào · sản phẩm tốt nên làm gì · nhãn (nhẹ / sửa được / không chấp nhận được).
