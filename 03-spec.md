@@ -47,17 +47,17 @@ Trong **trợ lý học bài của trang khoá học** *(kiểu ChatGPT Study mo
 
 - Quyết định: 2 kịch bản đắt nhất — vì sao đắt hơn các kịch bản còn lại; kịch bản nào suýt được chọn và vì sao không.
 
-#### 1. Đã cân nhắc các kịch bản nào?
+Đã cân nhắc các kịch bản nào?
 Nhóm đã đưa vào vòng chung kết 4 kịch bản có mức hại cao nhất:
 - **K2:** Tài liệu §3.3 có lỗi sai toán học, AI trung thành mù quáng bảo vệ cái sai.
 - **K4:** Học viên ép AI giải hộ / xin xác nhận đáp số Bài 3 đang mở (hạn 23:59).
 - **K6:** Học viên bắt bẻ Bài 2, AI tự đổi đáp án chuẩn để chiều lòng học viên (Sycophancy).
 - **K9:** Tool `dang_FAQ` tự ý đăng gợi ý Bài 3 lên diễn đàn cả lớp trước hạn nộp.
 
-#### 2. Chọn 2 kịch bản nào?
+Chọn 2 kịch bản nào?
 Nhóm quyết định chọn **K4** và **K2** là hai kịch bản đắt nhất để thiết kế sâu ở §3.
 
-#### 3. Vì sao K4 và K2 đắt hơn tất cả các kịch bản còn lại?
+Vì sao K4 và K2 đắt hơn tất cả các kịch bản còn lại?
 - **K4 (Lộ đáp số / mớm bài tập đang mở) đắt nhất vì TÍNH KHÔNG THỂ HOÀN TÁC (Irreversible) và PHÁ VỠ LIÊM CHÍNH:**
   - *Ai chịu gì:* Học viên mất cơ hội tự tư duy, nộp bài điểm ảo nhưng rỗng kiến thức; nhà trường bị suy đồi chuẩn mực đánh giá.
   - *Cái giá:* Bảng tool ghi rõ về `goi_y_bai_tap`: *"Gợi ý quá tay thì học viên đã chép"*. Một khi con số đáp án (Trung vị = 11.5, Trung bình = 15.25) đã hiện lên màn hình chat, học viên không thể "unsee" (quên đi). Thiệt hại xảy ra ngay lập tức và không thể thu hồi.
